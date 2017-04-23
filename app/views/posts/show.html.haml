@@ -1,0 +1,8 @@
+= @post.title
+%br
+= @post.content
+%br
+%br
+
+= link_to "Edit", edit_post_path
+= link_to "Delete", post_path, method: :delete, data: { confirm: "Ar tikrai?" }
